@@ -5,25 +5,25 @@ const TeamSection = () => {
     name: 'Pratik Patel',
     role: 'Full Stack Developer & AI Engineer',
     bio: 'Passionate about leveraging AI for healthcare innovation. Specialized in machine learning models and scalable web applications.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+    avatar: '/avatars/pratik.JPG',
     skills: ['React', 'Python', 'TensorFlow', 'Node.js']
   }, {
     name: 'Anuruth',
-    role: 'Data Scientist & ML Engineer',
+    role: 'Frontend Developer & Data Analyst',
     bio: 'Expert in predictive modeling and healthcare analytics. Focused on creating accurate health risk assessment algorithms.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+    avatar: '/avatars/anuruth .jpg',
     skills: ['Python', 'scikit-learn', 'Pandas', 'SQL']
   }, {
     name: 'Dev Jaladkar',
-    role: 'Frontend Developer & UX Designer',
+    role: 'Data Scientist & ML Engineer',
     bio: 'Creating intuitive and accessible healthcare interfaces. Ensuring users have seamless experience with complex health data.',
-    avatar: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=150&h=150&fit=crop&crop=face',
+    avatar: '/avatars/Dev.jpg',
     skills: ['React', 'TypeScript', 'Tailwind CSS', 'Figma']
   }, {
     name: 'Harshali',
     role: 'Backend Developer & DevOps',
     bio: 'Building robust and secure backend systems for healthcare data. Focused on scalability and data privacy compliance.',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b3fd?w=150&h=150&fit=crop&crop=face',
+    avatar: '/avatars/harshali.jpg',
     skills: ['Node.js', 'MongoDB', 'AWS', 'Docker']
   }];
   return <section id="team" className="py-16 bg-white">
