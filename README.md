@@ -38,11 +38,33 @@ cd Predicare-final
 # Install dependencies
 npm install
 
-# Start the development server
+# Start the development server (Frontend + AI Doctor Backend)
 npm run dev
 ```
 
-The app will be available at `http://localhost:8080`
+The app will be available at:
+- **Frontend**: `http://localhost:5173`
+- **AI Doctor Backend**: `http://localhost:8000`
+- **API Documentation**: `http://localhost:8000/docs`
+
+### 🔄 Development Commands
+
+```bash
+# Start both frontend and backend together (recommended)
+npm run dev
+
+# Start only the frontend
+npm run dev:frontend
+
+# Start only the AI Doctor backend
+npm run dev:backend
+
+# Install Python dependencies for AI Doctor
+npm run backend:install
+
+# Setup everything and start (includes dependency installation)
+npm run start
+```
 
 ### Environment Setup
 

@@ -1,0 +1,19 @@
+# Environment variables
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Audio files (temporary)
+*.mp3
+*.wav
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/

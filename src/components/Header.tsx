@@ -39,12 +39,9 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Features
+            <a href="#ai-doctor" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              AI Doctor
             </a>
-            <Link to="/chat" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              AI Chat
-            </Link>
             {isLoggedIn && (
               <Link to="/profile" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
                 Profile

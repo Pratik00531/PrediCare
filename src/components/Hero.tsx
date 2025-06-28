@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Shield, Brain, Users, Sparkles } from 'lucide-react';
+import { ArrowRight, Stethoscope, Brain, Image, Sparkles } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 
 const Hero = () => {
@@ -23,27 +23,27 @@ const Hero = () => {
           <div className="mb-8">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-green-100 rounded-full mb-6">
               <Sparkles className="h-4 w-4 text-blue-600 mr-2" />
-              <span className="text-sm font-medium text-gray-700">AI-Powered Health Intelligence</span>
+              <span className="text-sm font-medium text-gray-700">AI Doctor - Advanced Medical Consultation</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
-              <span className="block">Predict.</span>
+              <span className="block">Your Personal</span>
               <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
-                Prevent.
+                AI Doctor
               </span>
-              <span className="block">Personalize.</span>
+              <span className="block">Is Here</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
               {isLoggedIn ? (
                 <>
-                  Welcome back! Your AI health assistant is ready to help you 
-                  monitor your wellness and provide personalized insights.
+                  Welcome back! Your AI Doctor is ready to provide medical consultations, 
+                  analyze medical images, and offer personalized health guidance.
                 </>
               ) : (
                 <>
-                  Harness the power of AI to predict potential health risks and receive 
-                  personalized preventive care suggestions tailored just for you.
+                  Experience advanced medical consultation with AI-powered diagnosis, 
+                  medical image analysis, and voice-enabled health assistance.
                 </>
               )}
             </p>
@@ -59,7 +59,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button variant="outline" className="border-2 border-gray-300 hover:border-blue-500 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300">
-                Watch Demo
+                <a href="#ai-doctor">View AI Doctor</a>
               </Button>
             </div>
           )}
@@ -87,9 +87,9 @@ const Hero = () => {
                       </Button>
                     </Link>
                   )}
-                  <Link to="/chat">
+                  <Link to="#ai-doctor">
                     <Button variant="outline" className="border-2 border-blue-300 hover:border-blue-500 px-6 py-3 font-semibold rounded-full transition-all duration-300">
-                      Start AI Chat
+                      Start AI Consultation
                     </Button>
                   </Link>
                 </div>
@@ -101,31 +101,31 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="group p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:rotate-6 transition-transform duration-300">
-                <Brain className="h-8 w-8 text-white" />
+                <Stethoscope className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">AI-Powered Analysis</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Medical Consultation</h3>
               <p className="text-gray-600 leading-relaxed">
-                Advanced machine learning algorithms analyze your health data to provide intelligent insights and predictions.
+                Comprehensive medical consultations with AI-powered diagnosis and personalized treatment recommendations.
               </p>
             </div>
 
             <div className="group p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:rotate-6 transition-transform duration-300">
-                <Shield className="h-8 w-8 text-white" />
+                <Image className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Preventive Care</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Medical Image Analysis</h3>
               <p className="text-gray-600 leading-relaxed">
-                Get personalized recommendations to prevent health issues before they become serious problems.
+                Advanced AI analysis of medical images including X-rays, skin conditions, and other diagnostic imagery.
               </p>
             </div>
 
             <div className="group p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:rotate-6 transition-transform duration-300">
-                <Users className="h-8 w-8 text-white" />
+                <Brain className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Personal Health Coach</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Voice-Enabled Responses</h3>
               <p className="text-gray-600 leading-relaxed">
-                24/7 AI assistant ready to answer your health questions and guide your wellness journey.
+                Natural voice synthesis for AI doctor responses, making consultations more interactive and accessible.
               </p>
             </div>
           </div>
@@ -133,20 +133,20 @@ const Hero = () => {
           {/* Stats */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">10K+</div>
-              <div className="text-gray-600">Active Users</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">24/7</div>
+              <div className="text-gray-600">AI Doctor Available</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">95%</div>
-              <div className="text-gray-600">Accuracy Rate</div>
+              <div className="text-gray-600">Diagnostic Accuracy</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">24/7</div>
-              <div className="text-gray-600">AI Support</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">Voice</div>
+              <div className="text-gray-600">Enabled Responses</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent mb-2">100+</div>
-              <div className="text-gray-600">Health Conditions</div>
+              <div className="text-gray-600">Medical Conditions</div>
             </div>
           </div>
         </div>
